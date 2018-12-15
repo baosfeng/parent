@@ -17,7 +17,7 @@
 	</modules>
 	<properties>
 		<!-- spring版本号 -->
-		<spring.version>4.0.2.RELEASE</spring.version>
+		<spring.version>4.3.20.RELEASE</spring.version>
 		<!-- mybatis版本号 -->
 		<mybatis.version>3.2.6</mybatis.version>
 		<!-- log4j日志文件管理包版本 -->
@@ -27,6 +27,10 @@
 		<mysql.version>8.0.13</mysql.version>
 		<druid.version>1.1.12</druid.version>
 		<junit.version>4.12</junit.version>
+		<fastjson.version>1.2.31</fastjson.version>
+		<pagehelper.version>5.1.2</pagehelper.version>
+		<cglib.version>3.2.2</cglib.version>
+		<mybatis-spring.version>1.2.2</mybatis-spring.version>
 	</properties>
 
 	<dependencies>
@@ -94,19 +98,19 @@
 		<dependency>
 			<groupId>com.github.pagehelper</groupId>
 			<artifactId>pagehelper</artifactId>
-			<version>5.1.2</version>
+			<version>${pagehelper.version}</version>
 		</dependency>
 		<!-- 代理 -->
 		<dependency>
 			<groupId>cglib</groupId>
 			<artifactId>cglib</artifactId>
-			<version>3.2.2</version>
+			<version>${cglib.version}</version>
 		</dependency>
 		<!-- mybatis/spring包 -->
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis-spring</artifactId>
-			<version>1.2.2</version>
+			<version>${mybatis-spring.version}</version>
 		</dependency>
 		<!-- 导入Mysql数据库链接jar包 -->
 		<dependency>
@@ -165,7 +169,7 @@
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
-			<version>1.2.3</version>
+			<version>${fastjson.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
