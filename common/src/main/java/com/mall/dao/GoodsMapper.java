@@ -3,6 +3,8 @@ package com.mall.dao;
 import com.mall.entity.Goods;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
  * 商品Mapper
  * @author 小书包
@@ -51,4 +53,10 @@ public interface GoodsMapper {
 	 * @return
 	 */
     int updateByPrimaryKey(Goods record);
+
+	/**
+	 * 查询所有的商品
+	 * @return
+	 */
+	List<Goods> goodsList();
 }

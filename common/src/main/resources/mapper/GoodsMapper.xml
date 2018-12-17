@@ -16,7 +16,12 @@
     from goods
     where uuid = #{uuid,jdbcType=INTEGER}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+	<select id="goodsList" resultType="com.mall.entity.Goods">
+		select
+		<include refid="Base_Column_List" />
+		from goods
+	</select>
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from goods
     where uuid = #{uuid,jdbcType=INTEGER}
   </delete>
