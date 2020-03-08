@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/
+architecture-web/architecture-web.iml
+common/common.iml
+customer/customer.iml
+goods-web/goods-web.iml
+goods/goods.iml
+parent.iml
